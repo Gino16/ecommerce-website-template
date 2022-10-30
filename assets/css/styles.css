@@ -834,6 +834,127 @@ footer .copyright {
   color: #000;
 }
 
+/* Cart Page */
+
+#cart {
+  overflow-x: auto;
+}
+
+#cart table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  white-space: nowrap;
+}
+
+#cart table img {
+  width: 70px;
+}
+
+#cart table td {
+  text-align: center;
+}
+
+#cart table td:nth-child(1) {
+  width: 50px;
+}
+
+#cart table td:nth-child(2) {
+  width: 100px;
+}
+
+#cart table td:nth-child(3) {
+  width: 250px;
+}
+
+#cart table td:nth-child(4) {
+  width: 50px;
+}
+
+#cart table td:nth-child(5) {
+  width: 100px;
+}
+
+#cart table td:nth-child(5) input {
+  width: 80px;
+  padding: 10px;
+}
+
+#cart table td:nth-child(6) {
+  width: 10%;
+}
+
+#cart table thead {
+  border: 1px solid #e2e9e1;
+  border-left: none;
+  border-right: none;
+}
+
+#cart table thead td {
+  padding: 20px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+}
+
+#cart table tbody tr td {
+  padding-top: 15px;
+  font-size: 14px;
+}
+
+#cart-add {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#cart-add #coupon {
+  width: 50%;
+  padding: 20px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+#coupon h3,
+#subtotal h3 {
+  padding-bottom: 15px;
+}
+
+#coupon input {
+  padding: 10px 20px;
+  outline: none;
+  width: 60%;
+  margin-right: 10px;
+  border: 1px solid #e2e9e1;
+}
+
+#coupon button,
+#subtotal button {
+  background-color: #088178;
+  color: #fff;
+  padding: 12px 20px;
+}
+
+#subtotal {
+  width: 50%;
+  margin-bottom: 30px;
+  border: 1px solid #e2e9e1;
+  padding: 30px;
+}
+
+#subtotal table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#subtotal table td {
+  width: 50%;
+  border: 1px solid #e2e9e1;
+  padding: 10px;
+  font-size: 14px;
+}
+
 /* Standard Media Queries */
 @media (max-width: 1200px) {}
 
@@ -935,6 +1056,7 @@ footer .copyright {
   #newsletter .form {
     width: 70%;
   }
+
   /* Contact page */
   #form-details {
     /* flex-direction: column; */
@@ -1052,6 +1174,7 @@ footer .copyright {
   #about-head div {
     padding-left: 0;
   }
+
   /* contact page */
   #contact-details {
     flex-direction: column;
@@ -1075,6 +1198,19 @@ footer .copyright {
   #form-details form {
     width: 100%;
     margin-bottom: 30px;
+  }
+
+  /* Cart Page */
+  #cart-add {
+    flex-direction: column;
+  }
+
+  #cart-add #coupon {
+    width: 100%;
+  }
+
+  #subtotal{
+    width: 100%;
   }
 }
 
